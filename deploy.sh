@@ -1,3 +1,6 @@
-#!/bin/sh
-hexo g
-hexo d
+#!/usr/bin/expect
+eval spawn [lrange $argv 1 end]
+expect "password:"
+send [lindex $argv 0]
+send '\r'
+interact
