@@ -5,5 +5,5 @@ send [lindex $argv 0]
 send \r
 expect "password:"
 send [lindex $argv 1]
-send '\r'
+send \r
 interact
